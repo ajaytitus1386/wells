@@ -13,6 +13,10 @@ const nextConfig = {
           },
         ],
         destination: "/asimov",
+      },
+      {
+        source: "/about",
+        destination: "/asimov",
       }
     ]
 
