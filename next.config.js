@@ -6,7 +6,7 @@ const nextConfig = {
     return {
       beforeFiles: [
       {
-        source: "/",
+        source: "/*",
         has: [
           {
             type: "host",
