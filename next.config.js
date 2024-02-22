@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   async rewrites() {
-    return [
+    return {
+      beforeFiles: [
       {
         source: "/",
         has: [
@@ -19,6 +20,7 @@ const nextConfig = {
         destination: "/asimov",
       }
     ]
+    }
 
     // return {
     //   afterFiles: [
