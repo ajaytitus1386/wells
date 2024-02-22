@@ -7,14 +7,13 @@ const nextConfig = {
       afterFiles: [
         {
           source: "/",
-          has: [
-            {
-              type: "host",
-              value: "wells.hopto.org",
-            },
-          ],
           destination: "/asimov",
-        }
+        },
+        {
+          source: "/asimov",
+          destination: "/asimov",
+        },
+        
       ]
     }
     }
