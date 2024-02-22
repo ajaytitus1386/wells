@@ -2,21 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: "/(^.+)",
-  //       has: [
-  //         {
-  //           type: "host",
-  //           value: "wells.hopto.org"
-  //         },
-  //       ],
-  //       destination: "https://wells.hopto.org/",
-  //       permanent: true,
-  //     },
-  //   ]
-  // },
+  async redirects() {
+    return [
+      {
+        source: "/about",
+        has: [
+          {
+            type: "host",
+            value: "wells.hopto.org"
+          },
+        ],
+        destination: "/asimov",
+        permanent: true,
+      },
+    ]
+  },
   async rewrites() {
     return {
       beforeFiles: [
@@ -30,16 +30,6 @@ const nextConfig = {
         ],
         destination: "/asimov",
       },
-      {
-        source: "/about",
-        has: [
-          {
-            type: "host",
-            value: "wells.hopto.org"
-          },
-        ],
-        destination: "/asimov",
-      },  
       ],
     }
 
