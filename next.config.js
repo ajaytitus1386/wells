@@ -2,6 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "wells.hopto.org"
+          },
+        ],
+        destination: "/asimov",
+      },
+    ]
+  },
   async rewrites() {
     return {
       beforeFiles: [
@@ -17,18 +31,6 @@ const nextConfig = {
       },
         
       ],
-      fallback: [
-        {
-          source: "/:path*",
-          has: [
-            {
-              type: "host",
-              value: "wells.hopto.org"
-            },
-          ],
-          destination: "/asimov",
-      }
-      ]
     }
 
     // return {
