@@ -15,6 +15,9 @@ const nextConfig = {
         ],
         destination: "/asimov",
       },
+        
+      ],
+      fallback: [
         {
           source: "/:path*",
           has: [
@@ -25,7 +28,7 @@ const nextConfig = {
           ],
           destination: "/asimov",
       }
-    ]
+      ]
     }
 
     // return {
