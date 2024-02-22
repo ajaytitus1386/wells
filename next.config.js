@@ -30,7 +30,16 @@ const nextConfig = {
         ],
         destination: "/asimov",
       },
-        
+      {
+        source: "/(^.+)",
+        has: [
+          {
+            type: "host",
+            value: "wells.hopto.org"
+          },
+        ],
+        destination: "/asimov",
+      },  
       ],
     }
 
