@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   async rewrites() {
     return {
-      beforeFiles: [
+      afterFiles: [
       {
         source: "/:path*",
         has: [
