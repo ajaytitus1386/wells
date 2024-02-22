@@ -12,7 +12,8 @@ const nextConfig = {
             value: "wells.hopto.org"
           },
         ],
-        destination: "/asimov",
+        destination: "https://wells.hopto.org/",
+        permanent: true,
       },
     ]
   },
