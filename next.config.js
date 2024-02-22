@@ -5,14 +5,14 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/(^(?!$)[^/]+)",
+        source: "/^(?!asimov$).+",
         has: [
           {
             type: "host",
             value: "wells.hopto.org"
           },
         ],
-        destination: "/",
+        destination: "/asimov",
         permanent: true,
       },
     ]
