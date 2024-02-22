@@ -12,7 +12,7 @@ const nextConfig = {
             value: "wells.hopto.org"
           },
         ],
-        destination: "/",
+        destination: "/asimov",
         permanent: true,
       },
     ]
