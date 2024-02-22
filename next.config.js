@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   async rewrites() {
     return {
-      beforeFiles: [
+      afterFiles: [
       {
         source: "/",
         has: [
@@ -15,10 +15,6 @@ const nextConfig = {
         ],
         destination: "/asimov",
       },
-      {
-        source: "/about",
-        destination: "/asimov",
-      }
     ]
     }
 
