@@ -6,8 +6,8 @@ const nextConfig = {
     return {
       afterFiles: [
         {
-          source: "/asimov",
-          destination: "https://wells.hopto.org",
+          source: "https://wells.hopto.org",
+          destination: "/asimov",
         }
       ]
     }
