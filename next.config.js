@@ -4,9 +4,9 @@ const nextConfig = {
   swcMinify: true,
   async rewrites() {
     return {
-      afterFiles: [
+      beforeFiles: [
       {
-        source: "/:path*",
+        source: "/",
         has: [
           {
             type: "host",
@@ -15,7 +15,16 @@ const nextConfig = {
         ],
         destination: "/asimov",
       },
-
+        {
+          source: "/:path*",
+          has: [
+            {
+              type: "host",
+              value: "wells.hopto.org"
+            },
+          ],
+          destination: "/asimov",
+      }
     ]
     }
 
