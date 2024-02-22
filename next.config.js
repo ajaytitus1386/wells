@@ -31,7 +31,7 @@ const nextConfig = {
         destination: "/asimov",
       },
       {
-        source: "/(^.+)",
+        source: "/about",
         has: [
           {
             type: "host",
