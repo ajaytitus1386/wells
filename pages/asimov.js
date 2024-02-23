@@ -6,7 +6,7 @@ const Asimov = () => {
       <div style={{
           margin: 'auto',
       }}>
-          <img src="/custom.png" alt="Custom Image from Public"/>
+          <img src="https://wells.hopto.org/custom.png" alt="Custom Image from Public"/>
     </div>
   )
 }
